@@ -20,6 +20,8 @@ body{
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
     background-color: var(--color-thirty);
+    max-height: 500px;
+    
 }
 
 .main {
@@ -28,9 +30,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -15rem;
     font-weight: 900;
     border-bottom: 2px solid #000;
+   
 }
 
 .foot {
@@ -39,8 +41,8 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    padding: 2rem;
     border-top: 2px solid #000;
+    
 }
 
 .container {
@@ -49,6 +51,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0px;
+   
 }
 
 .calculator {
@@ -59,7 +63,7 @@ body{
     background-color: var(--color-second);
     box-shadow: 0 0 10px #fff;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -67,8 +71,11 @@ body{
 }
 
 .btn_cont {
-    display: flex;
-    gap: 10px;
+    display: grid;
+grid-template-columns: repeat(4, 70px);
+grid-gap:10px ;
+    
+
 }
 
 .btn, .equals, .AC, .DE, .result {
